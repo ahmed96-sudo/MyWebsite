@@ -1,0 +1,47 @@
+.ham {
+  cursor: pointer;
+  float: right;
+  padding: 40px 20px;
+  margin-left: auto;
+}
+.ham-line {
+  background: #4831d4;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+}
+.ham-line::before,
+.ham-line::after{
+  background: #4831d4;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.ham-line::before{
+  top: 5px;
+}
+.ham-line::after{
+  top: -5px;
+}
+.rotaft::after {
+  transform: rotate(-45deg);
+  top:0;
+}
+.rotbef::before {
+  transform: rotate(45deg);
+  top:0;
+}
+@media not all and (min-width: 770px) {
+  .sidebar {
+    display: none;
+    /*max-height: none;
+    */height: 0;
+    width: auto;
+    /* transition: max-height 0.5s ease-in-out; */
+    transition: height 0.5s ease-in-out;
+}
+}
