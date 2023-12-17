@@ -3,14 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect,useState } from "react"
-{/* <Image
-              src="/vercel.svg"
-              alt=""
-              className=""
-              width={100}
-              height={24}
-              priority
-            /> */}
 
 const Blogdata = () => {
     const [img, setImg] = useState([]);
@@ -93,7 +85,7 @@ const Blogdata = () => {
                     col.map((obj,id) => (
                     <div key={id} className='h-[480px] w-[30%] hover:scale-[1.1] transition-all duration-400 rounded-[30px] bg-white max-md:w-[85%] max-md:h-auto max-md:mb-[30px] forcat mb-[30px]' style={{"boxShadow": "0 4px 8px 0 rgba(0,0,0,0.2)"}}>
                         <div className='h-[250px] w-full flex justify-center items-center max-md:h-[150px]'>
-                            <Image src={"/" + obj.img} alt="" className='w-[97%] h-[97%] object-cover rounded-[30px]' width={200} height={200}/>
+                            <Image src={"/" + obj.img} alt="Post Logo" className='w-[97%] h-[97%] object-cover rounded-[30px]' width={200} height={200}/>
                         </div>
                         <div className='w-full flex flex-col max-md:h-[250px] max-md:justify-evenly'>
                             <div className='h-[40px] w-full flex justify-center items-center max-md:h-auto'>
@@ -113,7 +105,7 @@ const Blogdata = () => {
                     finalcol.map((obj,id) => (
                         <div key={id} className='h-[480px] w-[30%] hover:scale-[1.1] transition-all duration-400 rounded-[30px] bg-white max-md:w-[85%] max-md:h-auto max-md:mb-[30px] forcat mb-[30px]' style={{"boxShadow": "0 4px 8px 0 rgba(0,0,0,0.2)"}}>
                             <div className='h-[250px] w-full flex justify-center items-center max-md:h-[150px]'>
-                                <Image src={"/" + obj.img} alt="" className='w-[97%] h-[97%] object-cover rounded-[30px]' width={200} height={200}/>
+                                <Image src={"/" + obj.img} alt="Post Logo" className='w-[97%] h-[97%] object-cover rounded-[30px]' width={200} height={200}/>
                             </div>
                             <div className='w-full flex flex-col max-md:h-[250px] max-md:justify-evenly'>
                                 <div className='h-[40px] w-full flex justify-center items-center max-md:h-auto'>

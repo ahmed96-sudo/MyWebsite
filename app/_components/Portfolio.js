@@ -5,14 +5,6 @@ import "../portfol.css"
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect,useState } from "react"
-{/* <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            /> */}
 
 const Portfolio = () => {
     const [name, setName] = useState([]);
@@ -75,7 +67,7 @@ const Portfolio = () => {
                                             <div className="flip-card-front">
                                                 <Image
                                                     src={"/" + obj.img}
-                                                    alt=""
+                                                    alt="Portfolio"
                                                     className="h-full w-full flex justify-center items-center rounded-[30px]"
                                                     width={200}
                                                     height={200}
@@ -97,58 +89,5 @@ const Portfolio = () => {
         </section>
     )
 }
-/* <div className="flex justify-between max-md:hidden">
-    <div className="flip-card">
-        <div className="flip-card-inner">
-            <div className="flip-card-front">
-                <Image
-                    src="/schooldashboard.webp"
-                    alt="schooldashboard Logo"
-                    className="h-full w-full flex justify-center items-center rounded-[30px]"
-                    width={200}
-                    height={200}
-                />
-            </div>
-            <div className="flip-card-back flex justify-center items-center flex-col">
-                <h1 className="text-center text-[18px] font-semibold mb-[22px]">Efficient School Dashboard: Streamlining Information for Enhanced Educational Management.</h1>
-                <div className="h-[50px] w-[200px] flex justify-center items-center bg-transparent rounded-[30px] text-[17px] font-semibold text-[#4831d4] border border-[#4831d4] hover:bg-[#4831d4] hover:text-white transition-all duration-300 font-mono cursor-pointer">In Development</div>
-            </div>
-        </div>
-    </div>
-    <div className="flip-card">
-        <div className="flip-card-inner">
-            <div className="flip-card-front">
-                <Image
-                    src="/FleetTrackParts.png"
-                    alt="FleetTrackParts Logo"
-                    className="h-full w-full flex justify-center items-center"
-                    width={200}
-                    height={200}
-                />
-            </div>
-            <div className="flip-card-back flex justify-center items-center flex-col">
-                <h1 className="text-center text-[18px] font-semibold mb-[22px]">Your one-stop shop for Truck Parts, our small store website brings convenience and quality to your doorstep.</h1>
-                <div className="h-[50px] w-[200px] flex justify-center items-center bg-transparent rounded-[30px] text-[17px] font-semibold text-[#4831d4] border border-[#4831d4] hover:bg-[#4831d4] hover:text-white transition-all duration-300 font-mono cursor-pointer">In Development</div>
-            </div>
-        </div>
-    </div>
-    <div className="flip-card">
-        <div className="flip-card-inner">
-            <div className="flip-card-front">
-                <Image
-                    src="/collegewebsite.jfif"
-                    alt="collegewebsite Logo"
-                    className="h-full w-full flex justify-center items-center rounded-[30px]"
-                    width={200}
-                    height={200}
-                />
-            </div>
-            <div className="flip-card-back flex justify-center items-center flex-col">
-                <h1 className="text-center text-[18px] font-semibold mb-[22px]">Discover our dynamic college website, offering education, resources, and a vibrant community for your academic journey.</h1>
-                <div className="h-[50px] w-[200px] flex justify-center items-center bg-transparent rounded-[30px] text-[17px] font-semibold text-[#4831d4] border border-[#4831d4] hover:bg-[#4831d4] hover:text-white transition-all duration-300 font-mono cursor-pointer">In Development</div>
-            </div>
-        </div>
-    </div>
-</div> */
 
 export default Portfolio;

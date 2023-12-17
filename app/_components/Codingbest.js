@@ -1,11 +1,4 @@
 import Image from "next/image";
-{/* <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className="dark:invert"
-                width={100}
-                height={24}
-            /> */}
 
 const Codingbest = () => {
     return (
@@ -79,7 +72,7 @@ const Codingbest = () => {
                     <h2 className="text-[#4831d4] text-[24px] font-[600]">Optimize Code for Performance</h2>
                     <Image
                         src="/code-opti.png"
-                        alt="code-opti Logo"
+                        alt="Code-Optimize Logo"
                         className="w-[600px] h-[450px] rounded-[20px] my-[10px] max-md:h-[200px]"
                         width={600}
                         height={450}

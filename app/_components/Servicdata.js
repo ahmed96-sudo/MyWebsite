@@ -2,16 +2,7 @@
 
 import "../portfol.css";
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect,useState } from "react"
-{/* <Image
-              src="/vercel.svg"
-              alt=""
-              className=""
-              width={100}
-              height={24}
-              priority
-            /> */}
 
 const Servicdata = () => {
     const [arrWebName, setarrWebName] = useState([]);
@@ -52,7 +43,7 @@ const Servicdata = () => {
                             <div className='h-[35%] w-full flex flex-row justify-evenly items-center'>
                                 <Image
                                     src={"/" + obj.img}
-                                    alt=""
+                                    alt="Services Logo"
                                     className="h-[40px] w-[40px]"
                                     width={100}
                                     height={24}

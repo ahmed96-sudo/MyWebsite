@@ -40,7 +40,7 @@ const Imageforpost = ({ title }) => {
             <Image
                 id="imgforpost"
                 src=""
-                alt="Vercel Logo"
+                alt="Post Logo"
                 className="h-[450px] w-[600px] my-[20px] mx-auto rounded-[20px] max-md:w-[80%] max-md:h-[300px]"
                 width={100}
                 height={24}
@@ -49,28 +49,3 @@ const Imageforpost = ({ title }) => {
 }
 
 export default Imageforpost;
-
-// useEffect(() => {
-        
-    //     switch (title) {
-    //         case value:
-                
-    //             break;
-        
-    //         default:
-    //             break;
-    //     }
-    //     if (title == "Web Development Trends") {
-    //         document.getElementById('imgforpost').setAttribute("src", "/Web-Development-Trends.jpg");
-    //     } else if (title == "Coding Best Practices") {
-    //         document.getElementById('imgforpost').setAttribute("src", "/pexels-pixabay-270404.jpg");
-    //     } else if (title == "UX Design Tips") {
-    //         document.getElementById('imgforpost').setAttribute("src", "/Ui-ux-cover-imge.webp");
-    //     } else if (title == "Cybersecurity Essentials") {
-    //         document.getElementById('imgforpost').setAttribute("src", "/cyber.jpg");
-    //     } else if (title == "2024 Cyber Threats") {
-    //         document.getElementById('imgforpost').setAttribute("src", "/Top-Cybersecurity-Threats-in-2023.jpg");
-    //     } else if (title == "Online Safety Tips") {
-    //         document.getElementById('imgforpost').setAttribute("src", "/safety.jpg");
-    //     }
-    // }, [])

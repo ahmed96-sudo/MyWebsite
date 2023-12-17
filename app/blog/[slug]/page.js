@@ -1,4 +1,3 @@
-// import "../globals.css"
 import Image from "next/image";
 import Link from "next/link";
 import Imageforpost from "../../_components/Imageforpost";
@@ -6,13 +5,6 @@ import Determinecontent from "../../_components/Determinecontent";
 import Categorypost from "../../_components/Categorypost";
 import Linksshare from "../../_components/Linksshare";
 
-{/* <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className="dark:invert"
-                width={100}
-                height={24}
-            /> */}
 export const metadata = {
     title: 'Blog',
     description: 'Ahmed Blog.',
@@ -44,50 +36,12 @@ const page = ({  params }) => {
         <Imageforpost title={(params.slug).replace(/-/g, " ")} />
         <Determinecontent title={(params.slug).replace(/-/g, " ")} />
         <div className="tags h-[50px] w-[70%] mx-auto max-md:h-[120px]">
-            {/* <p>Categories: <span>Web</span><span>Development</span><span>Coding</span><span>Security</span><span>Cybersecurity</span><span>Tips</span></p> */}
             <Categorypost title={(params.slug).replace(/-/g, " ")}/>
         </div>
         <div className="Social Media Links max-[768px]:flex max-[768px]:flex-col max-[768px]:items-center w-[70%] mx-auto my-[20px]">
             <h1 className="text-[27px] font-[600] my-[5px] text-[#4831d4]">Don't forget to share this post!</h1>
             <Linksshare />
         </div>
-        {/* <div className="author">
-            <h1>
-                About Author
-            </h1>
-            <div>
-                <Image
-                    src="/ahmed.jpg"
-                    alt="Ahmed Saeed"
-                    className="w-[150px] h-[150px] rounded-[50%] object-cover max-md:my-[20px]"
-                    width={100}
-                    height={24}
-                    priority
-                />
-                <div>
-                    <h3>
-                        Ahmed Saeed
-                    </h3>
-                    <p className="w-[80%] h-auto text-[18px] text-[#3d155f] max-md:w-full max-md:text-center max-[768px]:ml-[20px]">A Full-Stack Web Developer passionate about creating easy online experiences. With expertise in both front-end and back-end technologies.</p>
-                </div>
-            </div>
-        </div> */}
-        {/* <div className="related">
-            <h2>
-                Related Posts
-            </h2>
-            <div>
-                <div className="post">
-                    
-                </div>
-                <div className="post">
-                    
-                </div>
-                <div className="post">
-                    
-                </div>
-            </div>
-        </div> */}
     </section>
     )
 }

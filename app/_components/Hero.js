@@ -1,14 +1,5 @@
-// import "../globals.css"
 import Image from "next/image";
 import Link from "next/link";
-{/* <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            /> */}
 
 const Hero = () => {
     return (
@@ -37,7 +28,7 @@ const Hero = () => {
                 <div className="w-[40%] flex justify-center items-center max-md:w-full">
                     <Image
                         src="/ahmed.jpg"
-                        alt="Vercel Logo"
+                        alt="ahmed Logo"
                         className="h-[250px] w-[250px] rounded-[50%] object-cover max-md:h-[200px] max-md:w-[200px] max-md:mb-[20px]"
                         width={250}
                         height={250}

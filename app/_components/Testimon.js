@@ -1,16 +1,7 @@
 'use client'
 
-// import "../globals.css"
 import Image from "next/image";
 import { useEffect } from "react";
-import Link from "next/link";
-{/* <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className="dark:invert"
-                width={100}
-                height={24}
-            /> */}
 
 const Testimon = () => {
     useEffect(() => {
@@ -53,10 +44,10 @@ const Testimon = () => {
                 <h3 className="max-md:text-center">People I've worked with have said some nice things...</h3>
             </div>
             <div className="h-[400px] w-full flex flex-row overflow-hidden relative max-md:h-[520px]">
-                <div id="testi1" className="absolute w-full right-[0%] h-full flex flex-col items-center justify-center transition-all duration-200">{/*right:200%*/}
+                <div id="testi1" className="absolute w-full right-[0%] h-full flex flex-col items-center justify-center transition-all duration-200">
                     <Image
                         src="/ayman.jpg"
-                        alt="Vercel Logo"
+                        alt="ayman Logo"
                         className="h-[150px] w-[150px] rounded-[50%]"
                         width={100}
                         height={24}
@@ -68,7 +59,7 @@ const Testimon = () => {
                 <div id="testi2" className="absolute w-full right-[-100%] h-full flex flex-col items-center justify-center transition-all duration-200">
                     <Image
                         src="/person.png"
-                        alt="Vercel Logo"
+                        alt="Youssef Logo"
                         className="h-[150px] w-[150px] rounded-[50%]"
                         width={100}
                         height={24}
@@ -80,7 +71,7 @@ const Testimon = () => {
                 <div id="testi3" className="absolute w-full right-[-200%] h-full flex flex-col items-center justify-center transition-all duration-200">
                     <Image
                         src="/youssef.jpg"
-                        alt="Vercel Logo"
+                        alt="Youssef Logo"
                         className="h-[150px] w-[150px] rounded-[50%]"
                         width={100}
                         height={24}

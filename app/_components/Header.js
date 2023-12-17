@@ -4,14 +4,6 @@ import "../globals.css"
 import Image from "next/image";
 import { useEffect } from "react";
 import Link from "next/link";
-{/* <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            /> */}
 
 const Header = () => {
     useEffect(() => {
@@ -22,24 +14,6 @@ const Header = () => {
         var butn = document.getElementById("butn");
         var hea = document.getElementById("hea");
         hamb.addEventListener("click", function () {
-            // chck1.style.backgroundColor = "#CBF380";
-            // chck2.style.backgroundColor = "#999";
-            // chck3.style.backgroundColor = "#999";
-            // testi1.classList.replace("right-[200%]", "right-[0%]")
-            // testi2.classList.replace("right-[0%]", "right-[-100%]")
-            // testi3.classList.replace("right-[0%]", "right-[-200%]")
-            // hamb.classList.toggle("bg-transparent");
-            // hambline.classList.toggle("bg-transparent");
-            // menu.classList.toggle("flex");
-            // menu.classList.toggle("flex-col");
-            // menu.classList.toggle("items-center");
-            // navb.classList.toggle("flex-col");
-            // navb.classList.toggle("pl-[55px]");
-            // navb.classList.toggle("w-full");
-            // navb.classList.toggle("items-baseline");
-            // butn.classList.toggle("h-[100px]");
-            // butn.classList.toggle("justify-center");
-            // butn.classList.toggle("w-full");
             hea.style.height = hea.style.height === '300px' ? '' : '300px';
             hamb.style.background = hamb.style.background === 'transparent' ? '' : 'transparent';
             hambline.style.background = hambline.style.background === 'transparent' ? '' : 'transparent';
@@ -71,7 +45,6 @@ const Header = () => {
                         priority
                     />
                 </div>
-                {/* <input type="checkbox" className="side-menu" id="side-menu" /> */}
                 <div id="menu" className="menu w-[80%] h-full flex justify-around">
                     <nav id="navb" className="flex flex-row w-[60%] h-full justify-center items-center">
                         <Link className="mr-[30px] text-[20px] hover:font-bold text-white hover:text-[#CBF380] font-mono" href="/">Home</Link>

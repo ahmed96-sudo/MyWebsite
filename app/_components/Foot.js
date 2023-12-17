@@ -1,15 +1,6 @@
 import "../globals.css"
 import Image from "next/image";
 import Link from "next/link";
-{/* <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            /> */}
-//  max-sm:flex-col max-sm:items-center
 const Foot = () => {
     return (
         <footer className="bg-[#3d155f] h-[300px]">

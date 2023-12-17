@@ -1,11 +1,4 @@
 import Image from "next/image";
-{/* <Image
-        src="/consistency.jpg"
-        alt="consistency Logo"
-        className="w-[35%] h-full rounded-[20px]"
-        width={500}
-        height={500}
-    /> */}
 
 const Uxtips = () => {
     return (

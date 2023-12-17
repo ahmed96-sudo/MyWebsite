@@ -1,19 +1,6 @@
-// 'use client'
-
 import "./glob.css"
-import Image from "next/image";
-// import { useEffect } from "react";
-import Link from "next/link";
-import Loadblog from "../_components/Loadblog"
 import Sidebar from "../_components/Sidebar";
 import Blogdata from "../_components/Blogdata";
-{/* <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className="dark:invert"
-                width={100}
-                height={24}
-            /> */}
 
 export const metadata = {
     title: 'Blog',
@@ -34,7 +21,3 @@ const Blogpage = () => {
     )
 }
 export default Blogpage;
-
-{/* <div className="flex justify-between max-md:flex-col max-md:items-center max-md:h-full">
-    
-</div> */}

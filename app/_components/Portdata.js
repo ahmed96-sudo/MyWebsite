@@ -4,14 +4,6 @@ import "../portfol.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect,useState } from "react"
-{/* <Image
-              src="/vercel.svg"
-              alt=""
-              className=""
-              width={100}
-              height={24}
-              priority
-            /> */}
 
 const Portdata = () => {
     const [name, setName] = useState([]);
@@ -110,7 +102,7 @@ const Portdata = () => {
                                 <div className="flip-card-front">
                                     <Image
                                         src={"/" + obje.img}
-                                        alt=""
+                                        alt="Portfolio"
                                         className="h-full w-full flex justify-center items-center rounded-[30px]"
                                         width={200}
                                         height={200}
@@ -138,7 +130,7 @@ const Portdata = () => {
                                 <div className="flip-card-front">
                                     <Image
                                         src={"/" + obje.img}
-                                        alt=""
+                                        alt="Portfolio"
                                         className="h-full w-full flex justify-center items-center rounded-[30px]"
                                         width={200}
                                         height={200}

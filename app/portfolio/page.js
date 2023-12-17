@@ -1,7 +1,4 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import "../portfol.css";
-import Load from '../_components/Load';
 import Portdata from "../_components/Portdata";
 export const metadata = {
     title: 'Portfolio',
@@ -19,5 +16,4 @@ const Portfolio = () => {
     )
 }
 
-{/* <Load text="Can't Load More"/> */}
 export default Portfolio;

@@ -38,10 +38,8 @@
 @media not all and (min-width: 770px) {
   .sidebar {
     display: none;
-    /*max-height: none;
-    */height: 0;
+    height: 0;
     width: auto;
-    /* transition: max-height 0.5s ease-in-out; */
     transition: height 0.5s ease-in-out;
 }
 }

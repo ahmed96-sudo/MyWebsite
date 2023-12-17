@@ -7,20 +7,9 @@ import Linksshare from "./Linksshare";
 
 const Sidebar = () => {
     useEffect(() => {
-        // var loc = window.location.href;
-        // console.log(loc);
-        // var url1 = "https://www.facebook.com/sharer.php?u=" + loc;
-        // var face = document.getElementById("face");
-        // face.href = url1;
-        // var url2 = "https://twitter.com/intent/tweet?url=" + loc;
-        // var tweet = document.getElementById("tweet");
-        // tweet.href = url2;
         var ham = document.getElementById("ham");
         var hamline = document.getElementById("hamline");
         var fil = document.getElementById("fil");
-        // var navb = document.getElementById("navb");
-        // var butn = document.getElementById("butn");
-        // var hea = document.getElementById("hea");
         ham.addEventListener("click", function () {
             ham.style.background = ham.style.background === 'transparent' ? '' : 'transparent';
             hamline.style.background = hamline.style.background === 'transparent' ? '' : 'transparent';
@@ -128,20 +117,6 @@ const Sidebar = () => {
             e.preventDefault();
             alert("I am Sorry To Say That This Feature Is Not Available Right Now");
             document.getElementById("subform").elements[0].value = "";
-            // var email = document.getElementById("subform").elements[0].value;
-            // var url = "https://script.google.com/macros/s/AKfycbxm9K7vK9jVH2qY6X4QzZqT2U8XG9ZqJ3kXs1Z1/exec?email=" + email;
-            // fetch(url)
-            //     .then(d => d.json())
-            //     .then(d => {
-            //         if (d.result == "success") {
-            //             alert("Subscribed Successfully");
-            //         } else {
-            //             alert("Error");
-            //         }
-            //     })
-            //     .catch(e => {
-            //         alert("Error");
-            //     });
         });
     }, []);
     return ( <div id="fil" className="sidebar w-[23%] h-full mt-[40px]">
@@ -189,15 +164,12 @@ const Sidebar = () => {
             <div className="flex flex-col justify-between max-md:flex-col max-md:items-center max-md:h-full mb-[40px] pl-[20px]">
                 <div className='h-auto w-[90%] hover:scale-[1.1] transition-all duration-400 rounded-[20px] bg-white flex flex-row mb-[30px] max-md:flex-col max-md:w-[80%]' style={{"boxShadow": "0 4px 8px 0 rgba(0,0,0,0.2)"}}>
                     <div className='w-[35%] flex justify-center items-center max-md:w-auto'>
-                        <Image src="/Web-Development-Trends.jpg" alt="Home Logo" className='w-[97%] h-[97%] object-cover rounded-[30px]' width={200} height={200}/>
+                        <Image src="/Web-Development-Trends.jpg" alt="Web-Development-Trends Logo" className='w-[97%] h-[97%] object-cover rounded-[30px]' width={200} height={200}/>
                     </div>
                     <div className='w-[65%] flex flex-col max-md:w-auto'>
                         <div className='h-[50px] w-full flex justify-center items-center'>
                             <Link className='font-black text-[#4831d4] text-[16px] max-[768px]:text-[15px] max-md:text-[18px]' href="/blog/Web-Development-Trends">Web Development Trends</Link>
                         </div>
-                        {/* <div className='h-[100px] w-full max-md:h-auto max-[768px]:overflow-auto'>
-                            <p className='h-full w-full text-[#4831d4] text-[15px] text-center'>Explore the latest web development trends that are shaping the digital landscape in 2023. From progressive web apps to serverless architecture, stay ahead of the curve...</p>
-                        </div> */}
                         <div className='h-[80px] w-full flex justify-center items-center'>
                             <Link className='h-[50px] w-[160px] flex justify-center items-center bg-transparent rounded-[30px] text-[17px] font-semibold text-[#4831d4] border border-[#4831d4] hover:bg-[#4831d4] hover:text-white transition-all duration-300 font-mono' href="/blog/Web-Development-Trends">Read More</Link>
                         </div>
@@ -211,9 +183,6 @@ const Sidebar = () => {
                         <div className='h-[50px] w-full flex justify-center items-center'>
                             <Link className='font-black text-[#4831d4] text-[18px] max-[768px]:text-[15px] max-md:text-[18px]' href="/blog/Cybersecurity-Essentials">Cybersecurity Essentials</Link>
                         </div>
-                        {/* <div className='h-[100px] w-full max-md:h-auto max-[768px]:overflow-auto'>
-                            <p className='h-full w-full text-[#4831d4] text-[15px] text-center'>Explore the importance of code documentation and version control to streamline collaboration with your team and ensure code reliability...</p>
-                        </div> */}
                         <div className='h-[80px] w-full flex justify-center items-center'>
                             <Link className='h-[50px] w-[160px] flex justify-center items-center bg-transparent rounded-[30px] text-[17px] font-semibold text-[#4831d4] border border-[#4831d4] hover:bg-[#4831d4] hover:text-white transition-all duration-300 font-mono' href="/blog/Cybersecurity-Essentials">Read More</Link>
                         </div>
@@ -221,15 +190,12 @@ const Sidebar = () => {
                 </div>
                 <div className='h-auto w-[90%] hover:scale-[1.1] transition-all duration-400 rounded-[20px] bg-white flex flex-row max-md:flex-col max-md:w-[80%]' style={{"boxShadow": "0 4px 8px 0 rgba(0,0,0,0.2)"}}>
                     <div className='w-[35%] flex justify-center items-center max-md:w-auto'>
-                        <Image src="/safety.jpg" alt="Home Logo" className='w-[97%] h-[97%] object-cover rounded-[30px]' width={200} height={200}/>
+                        <Image src="/safety.jpg" alt="safety Logo" className='w-[97%] h-[97%] object-cover rounded-[30px]' width={200} height={200}/>
                     </div>
                     <div className='w-[65%] flex flex-col max-md:w-auto'>
                         <div className='h-[50px] w-full flex justify-center items-center'>
                             <Link className='font-black text-[#4831d4] text-[18px]' href="/blog/Online-Safety-Tips">Online Safety Tips</Link>
                         </div>
-                        {/* <div className='h-[100px] w-full max-md:h-auto max-[768px]:overflow-auto'>
-                            <p className='h-full w-full text-[#4831d4] text-[15px] text-center'>Discover UX design tips to create intuitive and user-friendly digital experiences. From user research to prototyping, unlock the secrets of exceptional design...</p>
-                        </div> */}
                         <div className='h-[80px] w-full flex justify-center items-center'>
                             <Link className='h-[50px] w-[160px] flex justify-center items-center bg-transparent rounded-[30px] text-[17px] font-semibold text-[#4831d4] border border-[#4831d4] hover:bg-[#4831d4] hover:text-white transition-all duration-300 font-mono' href="/blog/Online-Safety-Tips">Read More</Link>
                         </div>
@@ -239,28 +205,6 @@ const Sidebar = () => {
         </div>
         <div className="Social Media Links max-[768px]:flex max-[768px]:flex-col max-[768px]:items-center">
             <h1 className="text-[20px] font-[600] ml-[10px] my-[5px] text-[#4831d4]">Share With Others</h1>
-            {/* <div className="flex flex-row ml-[30px]">
-                <Link id="face" target="_blank" href={""} className="mr-[20px] hover:scale-[1.1] transition-all duration-150">
-                    <Image
-                        src="/facebook.svg"
-                        alt="facebook Logo"
-                        className="h-[40px] w-[40px] rounded-[50%] bg-white"
-                        width={50}
-                        height={50}
-                        priority
-                    />
-                </Link>
-                <Link id="tweet" target="_blank" href={""} className="mr-[20px] hover:scale-[1.1] transition-all duration-150">
-                    <Image
-                        src="/twitter.png"
-                        alt="twitter Logo"
-                        className="h-[40px] w-[40px] rounded-[50%] bg-white"
-                        width={50}
-                        height={50}
-                        priority
-                    />
-                </Link>
-            </div> */}
             <Linksshare />
         </div>
         <div className="mt-[10px] text-[20px] ml-[10px] max-[768px]:text-center">

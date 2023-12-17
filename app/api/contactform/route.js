@@ -5,7 +5,6 @@ export async function POST(request) {
     require('dotenv').config()
     const res = await request.json()
     const { name, senderemail, subject, msg } = res;
-    // const myemail = "ahmed.saeed.12855@gmail.com";
     let status;
     if (!name || !senderemail || !subject || !msg) {
         status = "fail";
@@ -27,7 +26,6 @@ export async function POST(request) {
             to: process.env.myemail,
             replyTo: senderemail,
             subject: subject,
-            // text: msg + " | Sent from: " + senderemail,
             html: `<div style='font-size:25px;'>${msg}</div><p style='font-weight: 900;font-size: 30px;'>Sent from: ${senderemail}</p>`
         }
         transporter.sendMail(mailData, function (err, info) {
@@ -36,16 +34,6 @@ export async function POST(request) {
             else
                 console.log(info)
         });
-        // await new Promise((resolve, reject) => {
-        //     // send mail
-        //     transporter.sendMail(mailData, (err, response) => {
-        //         if (err) {
-        //             reject(console.log(err));
-        //         } else {
-        //             resolve(console.log(response));
-        //         }
-        //     });
-        // });
     }
     return NextResponse.json({ status: status })
 }

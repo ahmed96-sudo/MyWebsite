@@ -4,14 +4,6 @@ import "../globals.css"
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect,useState } from "react"
-{/* <Image
-              src="/vercel.svg"
-              alt=""
-              className=""
-              width={100}
-              height={24}
-              priority
-            /> */}
 
 const Services = () => {
     const [arrWebName, setarrWebName] = useState([]);
@@ -50,7 +42,7 @@ const Services = () => {
                             <div key={id} className="h-[35%] w-[280px] bg-[#4c5063] text-white flex flex-row justify-evenly items-center rounded-[10px] hover:scale-[1.1] transition-all duration-300 max-[768px]:w-[210px] max-md:w-[280px] my-[10px]" style={{"boxShadow": "0 4px 8px 0 rgba(0,0,0,0.2)"}}>
                                 <Image
                                     src={"/" + obj.img}
-                                    alt="code Logo"
+                                    alt="service Logo"
                                     className="h-[50px] w-[50px]"
                                     width={100}
                                     height={24}
@@ -64,7 +56,7 @@ const Services = () => {
                             <div key={id} className="h-[35%] w-[280px] bg-[#4c5063] text-white flex flex-row justify-evenly items-center rounded-[10px] hover:scale-[1.1] transition-all duration-300 max-[768px]:w-[210px] max-md:w-[280px] my-[10px]" style={{"boxShadow": "0 4px 8px 0 rgba(0,0,0,0.2)"}}>
                                 <Image
                                     src={"/" + obj.img}
-                                    alt="code Logo"
+                                    alt="service Logo"
                                     className="h-[50px] w-[50px]"
                                     width={100}
                                     height={24}
@@ -78,7 +70,7 @@ const Services = () => {
                             <div key={id} className="h-[35%] w-[280px] bg-[#4c5063] text-white flex flex-row justify-evenly items-center rounded-[10px] hover:scale-[1.1] transition-all duration-300 max-[768px]:w-[210px] max-md:w-[280px] my-[10px]" style={{"boxShadow": "0 4px 8px 0 rgba(0,0,0,0.2)"}}>
                                 <Image
                                     src={"/" + obj.img}
-                                    alt="code Logo"
+                                    alt="service Logo"
                                     className="h-[50px] w-[50px]"
                                     width={100}
                                     height={24}

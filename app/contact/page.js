@@ -1,14 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Contactpag from "../_components/Contactpag";
-{/* <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            /> */}
 
 export const metadata = {
     title: 'Contact Me',

@@ -6,7 +6,6 @@ import Image from "next/image";
 const Linksshare = () => {
     useEffect(() => {
         var loc = window.location.href;
-        // console.log(loc);
         var url1 = "https://www.facebook.com/sharer.php?u=" + loc;
         var face = document.getElementById("face");
         face.setAttribute("href", url1);
