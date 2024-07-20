@@ -4,6 +4,7 @@ import Imageforpost from "../../_components/Imageforpost";
 import Determinecontent from "../../_components/Determinecontent";
 import Categorypost from "../../_components/Categorypost";
 import Linksshare from "../../_components/Linksshare";
+import { notFound  } from "next/navigation";
 
 export const metadata = {
     title: 'Blog',
@@ -11,6 +12,9 @@ export const metadata = {
 }
 
 const page = ({  params }) => {
+    if (!((params.slug == 'Web-Development-Trends') || (params.slug == 'Coding-Best-Practices') || (params.slug == 'UX-Design-Tips') || (params.slug == 'Cybersecurity-Essentials') || (params.slug == '2024-Cyber-Threats') || (params.slug == 'Online-Safety-Tips'))) {
+        return notFound();
+    }
     metadata.title = (params.slug).replace(/-/g, " ");
     metadata.description = (params.slug).replace(/-/g, " ");
     return (
