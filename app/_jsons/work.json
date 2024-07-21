@@ -2,6 +2,6 @@
     "name" : ["KnowledgeWave", "School Dashboard", "ManagementStock", "Fleet Truck Parts", "WildCampersWorld", "college website"],
     "img" : ["knowledgewave.png", "schooldashboard.webp", "managementstock.png", "FleetTrackParts.png", "wildcampersworld.png", "collegewebsite.jfif"],
     "development" : [true, true, false, true, true, true],
-    "url" : ["", "", "https://managementstock.vercel.app/Dashbord", "", "", ""],
+    "url" : ["", "", "https://managingstock.vercel.app/", "", "", ""],
     "des" : ["Welcome to KnowledgeWave E-Learning Platform. You Learn better when We are Together.", "Efficient School Dashboard: Streamlining Information for Enhanced Educational Management.", "ManagementStock is a Dashboard for retailers and big SuperMarket. especially made for French People.", "Your one-stop shop for Truck Parts, our small store website brings convenience and quality to your doorstep.", "WildCampersWorld is everywhere you want to camp. Discover Unique Experience around the World.", "Discover our dynamic college website, offering education, resources, and a vibrant community for your academic journey."]
 }
